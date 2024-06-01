@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/1bba0234a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navBar">
+        <ul>
+            <li class="active"><a href="index.html"><i class="fa-solid fa-home"></i>Home</a></li>
+            <li><a href="Aboutus.html"><i class="fa-solid fa-user"></i>About us</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-blog"></i>Blog</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-address-book"></i>Contact us</a></li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-right">
+                    <h1 class="sub-title"> Contact us </h1>
+                    <form id="contact-form" method="post">
+                        <br />
+                        <h3> *Mandatory Fields</h3>
+                        <br />
+                        <input type="text" name="name" id="name" placeholder="Name*" required>
+                        <input type="number" name="number" id="number" placeholder="Phone">
+                        <input type="email" name="email" id="email" placeholder="Email*" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Suggestions/Comments"></textarea>
+                        <br />
+                        <button type="submit" class="btn4">
+                            Submit
+                        </button>
+                    </form>
+                    <div id="response-message"></div>
+                </div>
+            </div>
+            <div class="contact-left">
+                <p><i class="fa-regular fa-share-from-square"></i>purohit029@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <br />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const formData = new FormData(this);
+
+            fetch('http://localhost/DIT_blog_Website/DITblogWebsite/contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                const responseMessage = document.getElementById('response-message');
+                if (data.success) {
+                    responseMessage.textContent = data.message;
+                    responseMessage.className = ''; // Reset any previous error class
+                    // Clear form fields
+                    document.getElementById('contact-form').reset(); // Clear all form fields
+                } else {
+                    responseMessage.textContent = data.message;
+                    responseMessage.className = 'error'; // Add error class for styling
+                }
+            })
+            .catch(error => {
+                const responseMessage = document.getElementById('response-message');
+                responseMessage.textContent = 'An error occurred. Please try again.';
+                responseMessage.className = 'error';
+                console.error('Error:', error);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

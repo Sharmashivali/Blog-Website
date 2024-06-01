@@ -1,0 +1,614 @@
+/* 
+.navBar{
+    margin-top: 0px;
+    background-color: rgb(114, 4, 4);
+    text-align: center;
+    width: 100%;
+}
+.navBar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.navBar ul li{
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 19px;
+}
+.navBar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .navBar ul li:hover{
+    background:gray;
+    border-radius: 3px;
+}
+ .navBar i{
+   margin-right: 8px;
+}
+.sub-bar-1{
+    display: none;
+}
+.navBar ul li:hover .sub-bar-1{
+    display: block;
+    color: white;
+    position: absolute;
+    background-color: rgb(114, 4, 4);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.navBar ul li:hover .sub-bar-1 ul{
+    display: block;
+    margin: 15px;
+}
+.navBar ul li:hover .sub-bar-1 ul li{
+    width: 150px;
+    margin-left:0px;
+    padding:10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    cursor: pointer;
+
+}
+.navBar ul li:hover .sub-bar-1 ul li:last-child{
+    border-bottom: none;
+}
+.navBar ul li:hover .sub-bar-1 ul li a:hover{
+    color:gray;
+    font-weight: bolder;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-bar-2{
+    display: none;
+}
+.hover-me:hover .sub-bar-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 170px;
+    background:rgb(114, 4, 4);
+
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 90px auto;
+  font-family: "Roboto", sans-serif;
+}
+.description{
+    margin-left: 450px;
+    width: 1000px;
+    font-size: 25px;
+    position:absolute;
+    margin-top: 80px;
+}
+.about-container p {
+  line-height: 2;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.about-container .profile-image {
+  text-align: center;
+  padding: 30px;
+}
+
+
+.about-container .profile-image img {
+  width: 200px;
+  border-radius: 15%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 8px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  box-shadow: 0 4px 16px -6px rgba(0, 0, 0, 0.4);
+  max-width: 550px;
+  margin: 24px auto;
+  border-radius: 20px;
+}
+
+.projects-container .project {
+  height: 160px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 32px;
+}
+
+.projects-container .project-name {
+  font-size: 16px;
+}
+
+.projects-container .project-number {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.our-team-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  padding-top: 64px;
+  font-family: serif;
+
+}
+
+.our-team {
+  display: flex;
+  padding: 30px;
+  margin-left: -100px ;
+  
+}
+
+.team-member img {
+  width: 310px;
+  height: 350px;
+  opacity: 50%;
+  margin-right: 0px;
+
+}
+
+.team-member img:hover {
+  opacity: 100%;
+  transition: opacity 1s;
+}
+
+.our-team .team-member {
+  margin: 20px 30px;
+  position: relative;
+  width: 100%;
+}
+
+.our-team .designation {
+  position: absolute;
+  bottom: 20px;
+  background: #fff;
+  padding: 12px 20px;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  width: 310px;
+  margin-left: 0px;
+}
+.our-mission {
+  position: absolute;
+  margin-bottom: 500px;
+  margin-left: 70px;
+  margin-top:200px;
+}
+
+.our-mission p {
+  font-size: 30px;
+  margin-left: 100px;
+  position: absolute;
+  width: 800px;
+  bottom: 200px;
+  margin-top: 1200px;
+}
+
+
+.our-mission .quote-icon {
+  position: absolute;
+  opacity: 0.2;
+  height: 80px;
+  margin-right: 1500px;
+  bottom: 240px;
+}
+.btn {
+    padding: 7px 20px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    border-radius: 95px;
+    color: white;
+    background-color:white;
+    font-family:serif;
+    font-size: 20px !important;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    padding: 30px;
+    margin-left: 135px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    line-height: 0px;
+    width: 170px;
+    height: 50px;
+    margin-bottom: 90px;
+    margin-left: 330px;
+  }
+  .btn a{
+    text-decoration:none;
+    color: black;
+    font-family: serif;
+    justify-content: center;
+    font-weight: bolder;
+    position:relative;
+    margin-bottom: 19px;
+    padding: 1px 0px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .btn:hover {
+   background:rgb(118, 6, 6);
+  }
+  .btn:hover a{
+    color: white;
+  
+  }
+@media (max-width: 700px) {
+  .our-team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member img {
+    height: 250px;
+    width: 280px;
+    object-fit: cover;
+  }
+} */
+
+.navBar {
+  margin-top: 0px;
+  background-color: rgb(114, 4, 4);
+  text-align: center;
+  width: 100%;
+}
+
+.navBar ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navBar ul li {
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+  font-size: 19px;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.active, .navBar ul li:hover {
+  background: gray;
+  border-radius: 3px;
+}
+
+.navBar i {
+  margin-right: 8px;
+}
+
+.sub-bar-1 {
+  display: none;
+}
+
+.navBar ul li:hover .sub-bar-1 {
+  display: block;
+  color: white;
+  position: absolute;
+  background-color: rgb(114, 4, 4);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.navBar ul li:hover .sub-bar-1 ul {
+  display: block;
+  margin: 15px;
+}
+
+.navBar ul li:hover .sub-bar-1 ul li {
+  width: 150px;
+  margin-left: 0px;
+  padding: 10px;
+  border-bottom: 1px dotted white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.navBar ul li:hover .sub-bar-1 ul li:last-child {
+  border-bottom: none;
+}
+
+.navBar ul li:hover .sub-bar-1 ul li a:hover {
+  color: gray;
+  font-weight: bolder;
+}
+
+.fa-angle-right {
+  float: right;
+}
+
+.sub-bar-2 {
+  display: none;
+}
+
+.hover-me:hover .sub-bar-2 {
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 170px;
+  background: rgb(114, 4, 4);
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 90px auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.description {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 25px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.about-container p {
+  line-height: 2;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.about-container .profile-image {
+  text-align: center;
+  padding: 30px;
+}
+
+.about-container .profile-image img {
+  width: 200px;
+  border-radius: 15%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 8px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  box-shadow: 0 4px 16px -6px rgba(0, 0, 0, 0.4);
+  max-width: 550px;
+  margin: 24px auto;
+  border-radius: 20px;
+}
+
+.projects-container .project {
+  height: 160px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 32px;
+}
+
+.projects-container .project-name {
+  font-size: 16px;
+}
+
+.projects-container .project-number {
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.our-team-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  padding-top: 64px;
+  font-family: serif;
+}
+
+.our-team {
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member img {
+  width: 310px;
+  height: 350px;
+  opacity: 50%;
+  margin-left: 20px;
+
+  /* margin-right: 0px; */
+}
+
+.team-member img:hover {
+  opacity: 100%;
+  transition: opacity 1s;
+}
+
+.our-team .team-member {
+  margin: 20px;
+  position: relative;
+  width: auto;
+  text-align: center;
+}
+
+.our-team .designation {
+  position: absolute;
+  bottom: 20px;
+  background: #fff;
+  padding: 12px 20px;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  width: 310px;
+  margin-left: 0px;
+}
+
+.our-mission {
+  /* text-align: center; */
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+.our-mission p {
+  font-size: 20px;
+  margin-top:0px;
+  margin-left: 30px;
+  max-width: 800px;
+}
+
+.our-mission .quote-icon {
+  opacity: 0.2;
+  height: 80px;
+  margin-left: 0px;
+  /* margin: 10 auto; */
+  margin-top: 40px;
+  
+}
+/* .nav-bottom{
+  margin-left: 600px;
+  position: absolute;
+} */
+.btn1 {
+  padding: 7px 20px;
+  border-radius: 95px;
+  color: white;
+  background-color: white;
+  font-family: serif;
+  font-size: 20px !important;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  margin-left: 185px;
+}
+
+.btn1 a {
+  text-decoration: none;
+  color: black;
+  font-family: serif;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn1:hover {
+  background: rgb(118, 6, 6);
+}
+
+.btn1:hover a {
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navBar ul {
+      flex-direction: column;
+      padding: 0;
+  }
+
+  .navBar ul li {
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+  }
+
+  .description {
+      width: 90%;
+      font-size: 20px;
+      margin-top: 40px;
+  }
+
+  .about-container .profile-image img {
+      width: 150px;
+  }
+
+  .projects-container {
+      flex-direction: column;
+      align-items: center;
+      margin: 16px auto;
+  }
+
+  .projects-container .project {
+      width: 100%;
+      margin: 16px 0;
+  }
+
+  .our-team {
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+  }
+
+  .team-member img {
+      width: 300px;
+      height: 350px;
+  }
+
+  .our-team .designation {
+      width: 80%;
+      font-size: 12px;
+      padding: 10px;
+  }
+
+  .our-mission p {
+      font-size: 18px;
+      width: 15%;
+  }
+
+  .btn1 {
+      width: 30%;
+      font-size: 18px;
+      margin-left: 10px;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .navBar ul {
+      padding: 0;
+  }
+
+  .navBar ul li {
+      margin: 5px 0;
+  }
+
+  .description {
+      font-size: 18px;
+  }
+
+  .projects-container {
+      margin: 8px auto;
+  }
+
+  .projects-container .project-number {
+      font-size: 48px;
+  }
+
+  .our-team-heading {
+      font-size: 36px;
+      padding-top: 32px;
+  }
+
+  .our-mission p {
+      font-size: 26px;
+      width: 100%;
+  }
+
+  .btn1 {
+      width: 50%;
+      font-size: 16px;
+  }
+}

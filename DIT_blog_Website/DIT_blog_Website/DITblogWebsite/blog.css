@@ -1,0 +1,303 @@
+/* Existing styles */
+
+.navBar {
+    margin-top: 0px;
+    background-color: rgb(114, 4, 4);
+    text-align: center;
+    width: 100%;
+}
+
+.navBar ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navBar ul li {
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 19px;
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.active, .navBar ul li:hover {
+    background: gray;
+    border-radius: 3px;
+}
+
+.navBar i {
+    margin-right: 8px;
+}
+
+.sub-bar-1 {
+    display: none;
+}
+
+.navBar ul li:hover .sub-bar-1 {
+    display: block;
+    color: white;
+    position: absolute;
+    background-color: rgb(114, 4, 4);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.navBar ul li:hover .sub-bar-1 ul {
+    display: block;
+    margin: 15px;
+}
+
+.navBar ul li:hover .sub-bar-1 ul li {
+    width: 150px;
+    margin-left: 0px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.navBar ul li:hover .sub-bar-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.navBar ul li:hover .sub-bar-1 ul li a:hover {
+    color: gray;
+    font-weight: bolder;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.sub-bar-2 {
+    display: none;
+}
+
+.hover-me:hover .sub-bar-2 {
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 170px;
+    background: rgb(114, 4, 4);
+}
+
+main {
+    max-width: 600px;
+    margin: 32px auto;
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    margin-top: 40px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+#searchInput {
+    width: 350px;
+}
+
+.search-icon {
+    padding: 10px;
+    width: 18px;
+    margin-left: 10px;
+    background-color: rgb(125, 10, 10);
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    background-color: gray;
+    font-weight: bolder;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.results-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.results-container li {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.blog-comments {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#commentList1,
+#commentList2 {
+    list-style: none;
+    padding: 0;
+}
+
+#commentList1 li,
+#commentList2 li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#commentForm1,
+#commentForm2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#commentInput1,
+#commentInput2 {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#likeButton1,
+#likeButton2 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.content img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgb(125, 10, 10);
+    color: #fff;
+    border: 1px solid gray;
+}
+
+.content h3 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.content h4, .content h5, .content h1 {
+    font-size: 25px;
+    color: rgb(125, 10, 10);
+}
+
+.front-end h1, .backend h1 {
+    color: gray;
+    font-weight: bolder;
+    margin-top: 0px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.front-end img, .backend img {
+    display: block;
+    margin: 0 auto;
+}
+
+.content ul {
+    font-size: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navBar ul {
+        flex-direction: column;
+    }
+
+    .navBar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    #searchInput {
+        width: 100%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .content h2, .content h3, .content h4, .content h5, .content h1 {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+
+    .front-end h1, .backend h1 {
+        font-size: 30px;
+    }
+
+    .content img {
+        width: 100%;
+    }
+}
